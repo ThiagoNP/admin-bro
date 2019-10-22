@@ -8,6 +8,7 @@ import MixedType from './mixed'
 import defaultType from './default-type'
 import boolean from './boolean'
 import datetime from './datetime'
+import password from './password'
 import richtext from './richtext'
 import reference from './reference'
 import { BasePropertyProps } from './base-property-props'
@@ -24,6 +25,7 @@ try {
 
 const types = {
   boolean,
+  password,
   datetime,
   reference,
   date: datetime,
