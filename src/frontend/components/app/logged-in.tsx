@@ -33,7 +33,7 @@ const Dropdown = styled.div.attrs({
 const LoggedInBox = styled.div.attrs({
   className: 'navbar-item has-dropdown is-hoverable navbar-user',
 })`
-  
+
   &&&:hover ${UserBox} {
     background-color: ${({ theme }): string => theme.colors.superLightBack};
     color: ${({ theme }): string => theme.colors.lightText};
@@ -60,7 +60,7 @@ const DropdownLink = styled.a.attrs({
       color: ${({ theme }): string => theme.colors.defaultText};
       background-color: transparent;
     }
-    
+
     i, svg {
       margin-right: ${({ theme }): string => theme.sizes.padding};
     }
@@ -85,7 +85,7 @@ const LoggedIn: React.FC<Props> = (props) => {
       <Dropdown>
         <DropdownLink href={paths.logoutPath}>
           <i className="fas fa-sign-out-alt" />
-          Sign out
+          Sair
         </DropdownLink>
       </Dropdown>
     </LoggedInBox>

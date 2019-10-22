@@ -64,12 +64,12 @@ class Edit extends React.Component<ActionProps & RouteComponentProps & AddNotice
       if (response.data.redirectUrl) {
         history.push(response.data.redirectUrl)
         addNotice({
-          message: 'Record has been successfully updated!',
+          message: 'Registro atualizado com sucesso!',
         })
       } else {
         addNotice({
           type: NoticeType.error,
-          message: 'There were errors in the record object. Check them out',
+          message: 'Não foi possível salvar, por favor, verifique os dados inseridos e tente novamente.',
         })
         this.setState(state => ({
           record: {
@@ -103,7 +103,7 @@ class Edit extends React.Component<ActionProps & RouteComponentProps & AddNotice
           ))}
           <StyledButton type="submit" className="is-primary">
             <i className="icomoon-save" />
-            <span className="btn-text">Save</span>
+            <span className="btn-text">Salvar</span>
           </StyledButton>
         </form>
       </WrapperBox>

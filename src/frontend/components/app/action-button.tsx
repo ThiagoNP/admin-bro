@@ -48,7 +48,7 @@ class ActionButton extends React.PureComponent<RouteComponentProps & Props & Add
         resourceId, actionName: action.name, recordId,
       }).then((response) => {
         addNotice({
-          message: `action ${action.name} has been successfully performed`,
+          message: 'Ação executada com sucesso!',
         })
         if (location.pathname !== response.data.redirectUrl) {
           history.push(response.data.redirectUrl)

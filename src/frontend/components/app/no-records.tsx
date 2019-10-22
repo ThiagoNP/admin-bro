@@ -16,13 +16,13 @@ const NoRecords: React.FC<Props> = (props) => {
 
   return (
     <div className="content has-text-centered">
-      <h3>No records</h3>
+      <h3>Nenhum registro encontrado</h3>
       <p>
-        There are no records in this resource.
+        Não há dados cadastrados.
         {canCreate ? (
           <React.Fragment>
-            <span>Create </span>
-            <Link to={newAction}>first record</Link>
+            <span>Inserir </span>
+            <Link to={newAction}>novos</Link>
           </React.Fragment>
         ) : ''}
       </p>

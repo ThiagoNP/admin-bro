@@ -70,6 +70,7 @@ class Edit extends React.Component<CombinedProps> {
       <PropertyInEdit property={property} error={error}>
         <Select
           cacheOptions
+          placeholder="Selecione..."
           value={selectedOption}
           styles={styles}
           defaultOptions

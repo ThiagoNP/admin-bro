@@ -33,6 +33,7 @@ export default class Edit extends React.Component<PropertyProps> {
       return (
         <Select
           isClearable
+          placeholder="Selecione..."
           value={selected}
           options={property.availableValues}
           onChange={this.handleSelectChange}

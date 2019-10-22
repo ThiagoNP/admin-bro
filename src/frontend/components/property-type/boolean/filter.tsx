@@ -32,6 +32,7 @@ class Filter extends React.PureComponent<FilterPropertyProps & ThemeProps<Defaul
         <Select
           value={typeof selected === 'undefined' ? '' : selected}
           isClearable
+          placeholder="Selecione..."
           options={options}
           styles={filterStyles(theme)}
           onChange={this.handleChange}

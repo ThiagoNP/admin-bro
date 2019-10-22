@@ -47,8 +47,8 @@ type Props = {
 
 const Login: React.FC<Props> = (props) => {
   const { action, message } = props
-  const email = { name: 'email', label: 'Your email' }
-  const password = { name: 'password', label: 'Password' }
+  const email = { name: 'email', label: 'Email' }
+  const password = { name: 'password', label: 'Senha' }
 
   return (
     <React.Fragment>
@@ -57,16 +57,16 @@ const Login: React.FC<Props> = (props) => {
         <LoginBox>
           <WrapperBox border>
             <div className="content">
-              <h1 style={{ marginTop: 25, marginBottom: 25 }}>Welcome!</h1>
-              <p>Please login to proceed to the admin panel</p>
+              <h1 style={{ marginTop: 25, marginBottom: 25 }}>Bem Vindo!</h1>
+              <p>Por favor, faça o login para acessar o painel</p>
             </div>
             {message && <div className="notification is-danger">{message}</div>}
             <form action={action} method="POST" style={{ marginBottom: 30 }}>
               <PropertyInEdit property={email}>
-                <input type="text" name="email" id="email" placeholder="Your Email Address" className="input" />
+                <input type="text" name="email" id="email" placeholder="Email" className="input" />
               </PropertyInEdit>
               <PropertyInEdit property={password}>
-                <input type="password" name="password" id="password" placeholder="Password" className="input" />
+                <input type="password" name="password" id="password" placeholder="Senha" className="input" />
               </PropertyInEdit>
               <StyledButton type="submit" className="is-primary is-fullwidth" style={{ marginTop: 40 }}>
                 Login

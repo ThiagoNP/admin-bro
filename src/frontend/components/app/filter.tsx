@@ -160,7 +160,7 @@ class Filter extends React.Component<CombinedProps, State> {
         <FilterContent>
           <FilterLink onClick={toggleFilter}>
             <span><i className="fas fa-arrow-right" /></span>
-            Filter
+            Filtrar
           </FilterLink>
           <form onSubmit={this.handleSubmit.bind(this)}>
             {properties.map(property => (
@@ -174,14 +174,14 @@ class Filter extends React.Component<CombinedProps, State> {
               />
             ))}
             <StyledButton className="is-primary">
-              Apply Changes
+              Aplicar Filtros
             </StyledButton>
             <StyledButton
               as="a"
               className="is-text"
               onClick={this.resetFilter}
             >
-              Clear filters
+              Remover Filtros
             </StyledButton>
           </form>
         </FilterContent>

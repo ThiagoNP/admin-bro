@@ -32,6 +32,7 @@ class Filter extends React.PureComponent<FilterPropertyProps & ThemeProps<Defaul
       const selected = property.availableValues.find(av => av.value === value)
       return (
         <Select
+          placeholder="Selecione..."
           value={typeof selected === 'undefined' ? '' : selected}
           isClearable
           options={property.availableValues}

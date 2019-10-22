@@ -45,6 +45,7 @@ class Filter extends React.PureComponent<CombinedProps> {
       <PropertyInFilter property={property}>
         <Select
           value={typeof selected === 'undefined' ? '' : selected}
+          placeholder="Selecione..."
           isClearable
           cacheOptions
           styles={filterStyles(theme)}

@@ -16,7 +16,7 @@ const DeleteAction: Action = {
   actionType: 'record',
   icon: 'icomoon-remove-2',
   label: 'Remove',
-  guard: 'Do you really want to remove this item?',
+  guard: 'Você tem certeza que deseja remover este registro?',
   component: false,
   /**
    * Responsible for deleting existing record.

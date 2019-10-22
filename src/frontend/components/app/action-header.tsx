@@ -125,7 +125,7 @@ const ActionHeader: React.FC<Props> = (props) => {
             <span className="icon">
               <i className="fas fa-sliders-h" />
             </span>
-            <span className="btn-text">Filter</span>
+            <span className="btn-text">Filtrar</span>
           </StyledButton>
         )}
       </HeaderButtons>

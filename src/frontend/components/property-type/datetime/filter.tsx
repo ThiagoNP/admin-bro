@@ -81,7 +81,7 @@ export default class Filter extends React.Component<FilterPropertyProps> {
     onChange(`${property.name}${PARAM_SEPARATOR}${key}`, date)
   }
 
-  renderFilter(where): ReactNode {
+  renderFilter(where, label): ReactNode {
     const key = where.toLowerCase()
     const { property } = this.props
     const filterKey = `filter-${property.name}`
@@ -89,7 +89,7 @@ export default class Filter extends React.Component<FilterPropertyProps> {
       <div>
         <Label>
         -
-          {where}
+          {label}
         :
         </Label>
         <div className="control has-icons-right">
@@ -112,8 +112,8 @@ export default class Filter extends React.Component<FilterPropertyProps> {
     return (
       <PropertyInFilter property={property}>
         <div className="date-range">
-          {this.renderFilter('From')}
-          {this.renderFilter('To')}
+          {this.renderFilter('From', 'De')}
+          {this.renderFilter('To', 'Até')}
         </div>
       </PropertyInFilter>
     )
